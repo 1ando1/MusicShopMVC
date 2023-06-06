@@ -1,0 +1,35 @@
+﻿@model List<Music_Shop.ViewModels.GuitarCardViewModel>;
+@{
+    string prodImgPlaceholder = @"data:image/png;base64,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";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Popular Products</h1>
+    <hr />
+    <p>Guitars</p>
+    <div class="row row-cols-2 row-cols-lg-4 g-3 align-items-stretch">
+        @foreach (var i in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@(i.Guitar.ImagePath ?? prodImgPlaceholder)" class="card-img-top prod-image" alt="ProdImg">
+                    <div class="card-body">
+                        <h5 class="card-title">@i.Guitar.Name</h5>
+                        <p class="card-text">Price: @i.Guitar.Price$</p>
+                    </div>
+                    <div class="card-footer">
+                        <a asp-controller="Guitars" asp-action="Details" asp-route-id="@i.Guitar.Id" class="btn btn-outline-secondary">Details</a>
+                        @if (!i.IsInCard)
+                        {
+                            <a asp-controller="Cart" asp-action="Add" asp-route-id="@i.Guitar.Id" class="btn btn-outline-primary">Add to Cart</a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Cart" asp-action="Remove" asp-route-id="@i.Guitar.Id" class="btn btn-outline-secondary">Remove from Cart</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

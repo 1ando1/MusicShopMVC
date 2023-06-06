@@ -1,0 +1,28 @@
+﻿@model Music_Shop.Models.Guitar;
+@{ 
+    string returnUrl = ViewBag.ReturnUrl;
+}
+
+<div>
+    <a href="@returnUrl" class="btn btn-outline-dark">Back</a>
+    <h1 class="d-inline-block align-middle">Guitar Details</h1>
+</div>
+<hr />
+
+<section class="text-center border border-dark rounded">
+    <img src="@Model.ImagePath">    
+    <h2 class="mb-4">@Model.Name</h2>
+
+    <h3>Type</h3>
+    <p>@Model.Type</p>
+
+    <h3>Color</h3>
+    <p>@Model.Color</p>
+
+    <h3>Extra Product</h3>
+    <p>@Model.ExtraProduct?.Name</p>
+
+    <h3>Price</h3>
+    <p>@Model.Price</p>
+    
+</section>
